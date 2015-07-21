@@ -2,20 +2,21 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes"/>
     <title>Sequences sunburst</title>
     <link rel="stylesheet" type="text/css"
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
     <link rel="stylesheet" type="text/css" href="sequences.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
   </head>
   <body>
     <div id="main">
-      <div id="sequence"></div>
       <div id="chart">
         <div id="explanation" style="visibility: hidden;">
           <span id="value"></span><br/>
           <span id="percentage"></span><br/>
-          of total budget<!--visits begin with this sequence of pages-->
+          of total budget
+          <div id="sequence"></div>
         </div>
       </div>
     </div>
@@ -24,263 +25,19 @@
       <div id="legend" style="visibility: hidden;"></div>
     </div>
 
-    <textarea id="data">
-,311 Answer Center Operations,General Government,Communications,11931000
-Administration,Economic Development,Public Housing and Community Development,113000
-Administration,General Government,Audit and Management Services,220000
-Administration,General Government,Management and Budget,1067000
-Administration,Recreation and Culture,Library,1138000
-Administration,Public Safety,Medical Examiner,2141000
-Administration,Health and Human Services,Public Housing and Community Development,3550000
-Administration,Recreation and Culture,Cultural Affairs,3954000
-Administration,Health and Human Services,Community Action and Human Services,4592000
-Administration,Neighborhood and Infrastructure,Regulatory and Economic Resources,6639000
-Administration,Public Safety,Police,6813000
-Administration,Public Safety,Fire Rescue,20676000
-Administration,Neighborhood and Infrastructure,Public Works and Waste Management,47042000
-Administration,Transportation,Aviation,60355000
-Administrative Office of the Courts,Public Safety,Judicial Administration,22058000
-Administrative Support,Recreation and Culture,Tourist Development Taxes,1021000
-Administrative Support,General Government,Communications,1134000
-Administrative Support,General Government,Property Appraiser,3325000
-Advertising and Promotions,Recreation and Culture,Tourist Development Taxes,20676000
-Advising Departments,Policy Formulation,County Attorney's Office,4808000
-Agenda Coordination and Processing,Policy Formulation,Board of County Commissioners,548000
-Americans with Disabilities Act (ADA) Coordination,General Government,Internal Services,208000
-Art in Public Places,Recreation and Culture,Cultural Affairs,3739000
-Asset Management,Health and Human Services,Public Housing and Community Development,51168000
-Audit Services,General Government,Audit and Management Services,4258000
-Beach Maintenance,Neighborhood and Infrastructure,"Parks, Recreation and Open Spaces",3581000
-Board of County Commissioners,Policy Formulation,Board of County Commissioners,11986000
-Bond Administration,General Government,Finance,2423000
-Budget and Finance,Neighborhood and Infrastructure,Animal Services,1635000
-Budget and Finance,General Government,Internal Services,8947000
-Business Affairs,Economic Development,Regulatory and Economic Resources,10930000
-Business Development,Transportation,Port of Miami,2142000
-Business Retention and Development,Transportation,Aviation,10171000
-Business Support,Recreation and Culture,"Parks, Recreation and Open Spaces",12413000
-Capital Development,Transportation,Port of Miami,6632000
-Capital Outlay Reserve,Neighborhood and Infrastructure,Capital Outlay Reserve,2190000
-Capital Outlay Reserve,Recreation and Culture,Capital Outlay Reserve,5171000
-Capital Outlay Reserve,General Government,Capital Outlay Reserve,14307000
-Capital Outlay Reserve,Health and Human Services,Capital Outlay Reserve,14900000
-Capital Outlay Reserve,Public Safety,Capital Outlay Reserve,20299000
-Cash Management,General Government,Finance,1745000
-Clerk of the Board,Public Safety,Office of the Clerk,2795000
-Coastal Park and Marina Enterprise (CPME),Recreation and Culture,"Parks, Recreation and Open Spaces",18515000
-Code Enforcement,Neighborhood and Infrastructure,Animal Services,2442000
-Collection Operations,Neighborhood and Infrastructure,Public Works and Waste Management,117108000
-Commercial Operations,Transportation,Aviation,67537000
-Commission on Ethics and Public Trust,General Government,Commission on Ethics and Public Trust,2140000
-"Community Engagement, Partnerships and Programming",Recreation and Culture,Library,2530000
-Compensation and Benefits,General Government,Human Resources,3223000
-Construction and Maintenance,Transportation,Public Works and Waste Management,14518000
-Construction and Maintenance,Neighborhood and Infrastructure,Public Works and Waste Management,36060000
-"Construction, Permitting, and Building Code",Neighborhood and Infrastructure,Regulatory and Economic Resources,47983000
-Controller's Division,General Government,Finance,11606000
-Cooperative Extension,Recreation and Culture,"Parks, Recreation and Open Spaces",1039000
-County Clerk,Public Safety,Office of the Clerk,5905000
-County Commission Support,Policy Formulation,County Attorney's Office,3847000
-County Recorder,Public Safety,Office of the Clerk,5074000
-County Services,General Government,Information Technology,11570000
-Creative and Branding Services,General Government,Communications,1222000
-Cultural and Special Events,Recreation and Culture,Tourist Development Taxes,4885000
-Cultural Facilities,Recreation and Culture,Cultural Affairs,5129000
-Custody Services,Public Safety,Corrections and Rehabilitation,237706000
-Death Investigation and Education,Public Safety,Medical Examiner,9233000
-Deering Estate and Destinations,Recreation and Culture,"Parks, Recreation and Open Spaces",4746000
-Deputy Director's Office,Transportation,Port of Miami,1795000
-Design and Construction Services,General Government,Internal Services,26442000
-Development Services,Neighborhood and Infrastructure,Regulatory and Economic Resources,7823000
-Director,Neighborhood and Infrastructure,Water and Sewer,5647000
-Director's Office,General Government,Finance,494000
-Director's Office,Neighborhood and Infrastructure,Animal Services,649000
-Director's Office,Neighborhood and Infrastructure,Regulatory and Economic Resources,1534000
-Disposal Operations,Neighborhood and Infrastructure,Public Works and Waste Management,49897000
-Domestic Violence Oversight Board,Health and Human Services,Homeless Trust,4874000
-Economic Development,Economic Development,Miami-Dade Economic Advocacy Trust,143000
-Economic Development,Economic Development,Non-Departmental,42848000
-"Elderly, Disability and Veterans Services",Health and Human Services,Community Action and Human Services,16374000
-Emergency Housing,Health and Human Services,Homeless Trust,12638000
-Emergency Management,Public Safety,Fire Rescue,4227000
-Employment and Training,Health and Human Services,Community Action and Human Services,676000
-Energy Programs,Health and Human Services,Community Action and Human Services,3335000
-Engineering,Transportation,Transit,21856000
-Enterprise Applications,General Government,Information Technology,9308000
-Enterprise Architecture,General Government,Information Technology,20119000
-Enterprise Data Center,General Government,Information Technology,20575000
-Enterprise IT Capital Investment Fund Pass-through,General Government,Information Technology,755000
-Enterprise Resource Planning,General Government,Information Technology,13377000
-Enterprise Security,General Government,Information Technology,3985000
-Enterprise Solutions,General Government,Information Technology,13070000
-Environmental and Technical Services,Neighborhood and Infrastructure,Public Works and Waste Management,77751000
-Environmental Resources Management,Neighborhood and Infrastructure,Regulatory and Economic Resources,49573000
-Executive,Transportation,Aviation,4248000
-Executive Office Support,Policy Formulation,County Attorney's Office,961000
-Exemptions and Public Service,General Government,Property Appraiser,5841000
-Facilities and Development,Health and Human Services,Public Housing and Community Development,2171000
-Facilities and Utilities Management,General Government,Internal Services,94442000
-Facilities Development,Transportation,Aviation,21001000
-Facilities Management,Transportation,Aviation,108838000
-Facilities within the City of Miami,Recreation and Culture,Tourist Development Taxes,4885000
-Family and Community Services,Health and Human Services,Community Action and Human Services,15254000
-Federally Funded Projects,Economic Development,Public Housing and Community Development,22263000
-Field Services,General Government,Property Appraiser,3869000
-Field Services,General Government,Information Technology,22690000
-Finance,Transportation,Port of Miami,22398000
-Finance and Accounting,Economic Development,Public Housing and Community Development,1667000
-Finance and Accounting,Health and Human Services,Public Housing and Community Development,2439000
-Finance and Administration,General Government,Elections,10518000
-Finance and Administration,Neighborhood and Infrastructure,Water and Sewer,105114000
-Finance and Strategy,Transportation,Aviation,10674000
-Fleet Management,General Government,Internal Services,98689000
-General Government,General Government,Non-Departmental,73870000
-Golf Enterprise,Recreation and Culture,"Parks, Recreation and Open Spaces",7843000
-Governmental Affairs,General Government,Elections,1408000
-Grants and Programs,Recreation and Culture,Cultural Affairs,14207000
-Grants Coordination,General Government,Management and Budget,29067000
-Greater Miami Service Corps,Health and Human Services,Community Action and Human Services,2435000
-Guardian Ad Litem,Public Safety,Juvenile Services,648000
-Head Start,Health and Human Services,Community Action and Human Services,62409000
-Health and Human Services,Health and Human Services,Non-Departmental,29556000
-Highway Engineering,Transportation,Public Works and Waste Management,12281000
-Highway Engineering,Neighborhood and Infrastructure,Public Works and Waste Management,39246000
-Historical Museum,Recreation and Culture,HistoryMiami,3854000
-Homeless Trust Operations,Health and Human Services,Homeless Trust,2296000
-Homeownership Assistance Program,Economic Development,Miami-Dade Economic Advocacy Trust,6089000
-Housing and Community Development,Economic Development,Public Housing and Community Development,4198000
-Housing Asset Projects,Economic Development,Public Housing and Community Development,740000
-Information Systems,General Government,Property Appraiser,5996000
-Information Systems,General Government,Elections,9605000
-Inspector General,General Government,Inspector General,6033000
-Inter and Intra Agency Transfers,General Government,Inter and Intra Agency Transfers,-338379000
-Inter and Intra Agency Transfers,Transportation,Inter and Intra Agency Transfers,-97612000
-Inter and Intra Agency Transfers,Recreation and Culture,Inter and Intra Agency Transfers,-35088000
-Inter and Intra Agency Transfers,Health and Human Services,Inter and Intra Agency Transfers,-15241000
-Inter and Intra Agency Transfers,Neighborhood and Infrastructure,Inter and Intra Agency Transfers,-12436000
-Inter and Intra Agency Transfers,Public Safety,Inter and Intra Agency Transfers,-8592000
-Inter and Intra Agency Transfers,Policy Formulation,Inter and Intra Agency Transfers,-5371000
-Inter and Intra Agency Transfers,Economic Development,Inter and Intra Agency Transfers,-161000
-Intergovernmental Affairs,Policy Formulation,Board of County Commissioners,790000
-Investigative Services,Public Safety,Police,135930000
-Jackson Health System,Health and Human Services,Jackson Health System,161006000
-Kennel,Neighborhood and Infrastructure,Animal Services,3138000
-Labor Relations and Fair Employment Practices,General Government,Human Resources,1531000
-Landscape Maintenance - Open Spaces,Neighborhood and Infrastructure,"Parks, Recreation and Open Spaces",13103000
-Landscape Maintenance - Special Taxing District,Neighborhood and Infrastructure,"Parks, Recreation and Open Spaces",4704000
-Law Library,Public Safety,Law Library,840000
-Legal Aid,Public Safety,Legal Aid,3405000
-Litigation,Policy Formulation,County Attorney's Office,13271000
-Live Release and Shelter Services,Neighborhood and Infrastructure,Animal Services,2553000
-Management and Budget,General Government,Management and Budget,3261000
-Management Planning and Performance Analysis,General Government,Management and Budget,998000
-Management Services and Training,Public Safety,Corrections and Rehabilitation,41549000
-Metrobus,Transportation,Transit,251620000
-Metromover,Transportation,Transit,10080000
-Metrorail,Transportation,Transit,71306000
-Miami Art Museum,Recreation and Culture,Perez Art Museum Miami,3664000
-Miami Science Museum,Recreation and Culture,Patricia and Phillip Frost Museum of Science,2500000
-Miami-Dade Television,General Government,Communications,2018000
-Natural Areas Management,Neighborhood and Infrastructure,"Parks, Recreation and Open Spaces",3911000
-Neighborhood and Infrastructure,Neighborhood and Infrastructure,Non-Departmental,5537000
-Non-Departmental,Transportation,Aviation,72100000
-Office of Commission Auditor,Policy Formulation,Board of County Commissioners,2391000
-Office of the Chair,Policy Formulation,Board of County Commissioners,1923000
-Office of the Citizens' Independent Transportation Trust,Transportation,Office of the Citizens' Independent Transportation Trust,2350000
-Office of the Director,Public Safety,Juvenile Services,288000
-Office of the Director,Recreation and Culture,Library,512000
-Office of the Director,General Government,Information Technology,524000
-Office of the Director,Recreation and Culture,"Parks, Recreation and Open Spaces",742000
-Office of the Director,Health and Human Services,Public Housing and Community Development,871000
-Office of the Director,Transportation,Transit,1061000
-Office of the Director,General Government,Human Resources,1240000
-Office of the Director,General Government,Internal Services,1289000
-Office of The Director,Public Safety,Corrections and Rehabilitation,8095000
-Office of the Executive Director and Administration,Economic Development,Miami-Dade Economic Advocacy Trust,809000
-Office of the Mayor,Policy Formulation,Office of the Mayor,4759000
-Office of the Port Director,Transportation,Port of Miami,2342000
-Office of the Supervisor of Elections,General Government,Elections,1481000
-Online Services,General Government,Communications,3404000
-Operating Grants,Transportation,Transit,5956000
-Operational Support,Public Safety,Office of the Clerk,3253000
-Operational Support,Public Safety,Juvenile Services,4209000
-Operational Support,General Government,Information Technology,12319000
-Operational Support,Transportation,Transit,121106000
-Operations,Public Safety,Juvenile Services,6602000
-Operations,General Government,Elections,7817000
-Operations,Transportation,Aviation,41745000
-Outreach and Development,Neighborhood and Infrastructure,Animal Services,2611000
-Paratransit,Transportation,Transit,45653000
-Park Operations,Recreation and Culture,"Parks, Recreation and Open Spaces",42935000
-Payroll and Information Management,General Government,Human Resources,2727000
-Performing Arts Center Trust,Recreation and Culture,Adrienne Arsht Center for the Performing Arts Trust,10146000
-Permanent Housing,Health and Human Services,Homeless Trust,20939000
-Personal Property,General Government,Property Appraiser,3014000
-Planning,Neighborhood and Infrastructure,Regulatory and Economic Resources,4195000
-Planning and Development,Recreation and Culture,"Parks, Recreation and Open Spaces",8799000
-Police Services,Public Safety,Police,290479000
-Policy Advisement,Transportation,Aviation,6468000
-Policy Legislation and Business Services,General Government,Internal Services,17269000
-Port Operations,Transportation,Port of Miami,28036000
-Procurement Management Services,General Government,Internal Services,10782000
-"Program Management, Regulatory and Compliance",Neighborhood and Infrastructure,Water and Sewer,38157000
-Property Appraiser,General Government,Property Appraiser,902000
-Psychological Services,Health and Human Services,Community Action and Human Services,251000
-Public Defender,Public Safety,Judicial Administration,3729000
-Public Interment Program,Public Safety,Medical Examiner,383000
-Public Safety,Public Safety,Non-Departmental,6992000
-Public Safety and Security,Transportation,Aviation,70931000
-Public Service,Recreation and Culture,Library,43330000
-Radio Communications Services,General Government,Information Technology,7565000
-Real Estate Commercial,General Government,Property Appraiser,2542000
-Real Estate Development,General Government,Internal Services,4651000
-Real Estate Residential,General Government,Property Appraiser,4541000
-Records Center,Public Safety,Office of the Clerk,1877000
-Recreation and Culture,Recreation and Culture,Non-Departmental,350000
-"Recruitment, Testing and Career Development",General Government,Human Resources,2183000
-Rehabilitative Services,Health and Human Services,Community Action and Human Services,4764000
-Risk Management,General Government,Internal Services,14189000
-Safety and Security,Transportation,Port of Miami,17251000
-Section 8 Housing Choice Voucher,Economic Development,Public Housing and Community Development,51000
-Section 8 Housing Choice Voucher,Health and Human Services,Public Housing and Community Development,12244000
-Shared Services,General Government,Information Technology,2521000
-SHIP and Surtax Projects,Economic Development,Public Housing and Community Development,31501000
-Small Business Development,General Government,Internal Services,6187000
-South Florida Regional Transportation Authority,Transportation,Transit,4235000
-South Miami-Dade Cultural Arts Center,Recreation and Culture,Cultural Affairs,5187000
-State Attorney,Public Safety,Judicial Administration,7128000
-Support Services,Health and Human Services,Homeless Trust,5828000
-Support Services,Recreation and Culture,Library,11800000
-Support Services,Public Safety,Corrections and Rehabilitation,37733000
-Support Services,Public Safety,Fire Rescue,53838000
-Support Services,Public Safety,Police,151980000
-Support Staff,Policy Formulation,Board of County Commissioners,1828000
-Suppression and Rescue,Public Safety,Fire Rescue,297976000
-Tax Collector's Office,General Government,Finance,23771000
-Technical/Support Services,Public Safety,Fire Rescue,20647000
-Teen Court,Public Safety,Miami-Dade Economic Advocacy Trust,1080000
-Telecom Pass Thru Costs,General Government,Information Technology,14788000
-Tourism Development Grants,Recreation and Culture,Tourist Development Taxes,1100000
-Traffic Operations,Transportation,Public Works and Waste Management,29649000
-Training,Public Safety,Fire Rescue,2796000
-Transitional Housing,Health and Human Services,Homeless Trust,10778000
-Transportation,Transportation,Capital Outlay Reserve,713000
-Transportation,Health and Human Services,Community Action and Human Services,1849000
-Value Adjustment Board Appeals and Legal,General Government,Property Appraiser,9865000
-Veterinary Clinic,Neighborhood and Infrastructure,Animal Services,4390000
-Violence Prevention and Intervention Services,Health and Human Services,Community Action and Human Services,5924000
-Vizcaya Museum and Gardens,Recreation and Culture,Vizcaya Museum and Gardens,2500000
-Voter Services,General Government,Elections,4481000
-Water and Wastewater Systems Operations,Neighborhood and Infrastructure,Water and Sewer,344135000
-Zoo Miami,Recreation and Culture,"Parks, Recreation and Open Spaces",22483000
-</textarea>
     <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="sequences.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js"></script>
-    <script type="text/javascript">
-      // Hack to make this example display correctly in an iframe on bl.ocks.org
-      d3.select(self.frameElement).style("height", "700px");
-  </script> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-36489340-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
   </body>
 </html>

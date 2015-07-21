@@ -19,8 +19,9 @@ body {
 }
 
 #sequence {
-  width: 600px;
+  width: 200px;
   height: 120px;
+  
 }
 
 #legend {
@@ -28,7 +29,7 @@ body {
 }
 
 #sequence text, #legend text {
-  font-weight: 600;
+  /*font-weight: 600;*/
   fill: #000;
 }
 
