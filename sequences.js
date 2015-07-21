@@ -184,6 +184,9 @@ function mouseover(d) {
     percentageString = "< 0.1%";
   }
 
+  d3.select('#value')
+      .text("$"+numeral(d.value).format('0,0'));
+
   d3.select("#percentage")
       .text(percentageString);
 

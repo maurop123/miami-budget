@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <title>Sequences sunburst</title>
-    <script src="http://d3js.org/d3.v3.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link rel="stylesheet" type="text/css"
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
     <link rel="stylesheet" type="text/css" href="sequences.css"/>
@@ -14,6 +13,7 @@
       <div id="sequence"></div>
       <div id="chart">
         <div id="explanation" style="visibility: hidden;">
+          <span id="value"></span><br/>
           <span id="percentage"></span><br/>
           of total budget<!--visits begin with this sequence of pages-->
         </div>
@@ -274,7 +274,10 @@ Voter Services,General Government,Elections,4481000
 Water and Wastewater Systems Operations,Neighborhood and Infrastructure,Water and Sewer,344135000
 Zoo Miami,Recreation and Culture,"Parks, Recreation and Open Spaces",22483000
 </textarea>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="sequences.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js"></script>
     <script type="text/javascript">
       // Hack to make this example display correctly in an iframe on bl.ocks.org
       d3.select(self.frameElement).style("height", "700px");
