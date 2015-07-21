@@ -118,7 +118,7 @@ var arc = d3.svg.arc()
 // Use d3.text and d3.csv.parseRows so that we do not need to have a header
 // row, and can receive the csv as an array of arrays.
 var d3_data =  encodeURI($('#data').val());
-d3.text( 'data://'+d3_data,  //"mfp1.csv", // "visit-sequences.csv",
+d3.text( 'operating_budget.csv', //'data://'+d3_data,  //"mfp1.csv", // "visit-sequences.csv",
 function(text) {
   var csv = d3.csv.parseRows(text);
   print_csv = csv;
@@ -285,27 +285,28 @@ function updateBreadcrumbs(nodeArray, percentageString) {
       .style("fill", 'transparent');//function(d) { return colors[d.name]; });
 
   entering.append("svg:text")
-      .attr("x", (b.w + b.t) / 2)
+      .attr("x", 10)//(b.w + b.t) / 2)
       .attr("y", b.h / 2)
       .attr("dy", "0.35em")
- //     .attr("text-anchor", "middle")
+      .attr("text-anchor", "left")
       .text(function(d) { return d.name; });
 
   // Set position for entering and updating nodes.
   g.attr("transform", function(d, i) {
-    return "translate(0, " + i*20 + ")";// * (b.w + b.s) + ", 0)";
+    return "translate(-10, " + i*20 + ")";// * (b.w + b.s) + ", 0)";
   });
 
   // Remove exiting nodes.
   g.exit().remove();
 
   // Now move and update the percentage at the end.
-  d3.select("#trail").select("#endlabel")
+ /* d3.select("#trail").select("#endlabel")
       .attr("x", 0)//(nodeArray.length + 0.5) * (b.w + b.s))
       .attr("y", b.h / 2)
       .attr("dy", "0.35em")
       //.attr("text-anchor", "middle")
       .text(percentageString);
+  */
 
   // Make the breadcrumb trail visible, if it's hidden.
   d3.select("#trail")
