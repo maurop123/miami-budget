@@ -4,7 +4,7 @@ improve this project.
 
 ### Ways *you* can contribute:
 * by [testing the software](http://mauroaperez.com/miamibudget)
-* by [using the issue tracker](https://github.com/) for...
+* by [using the issue tracker][issue_tracker] for...
   * reporting bugs
   * suggesting new features
   * suggesting labels for our issues
@@ -36,7 +36,7 @@ may be necessary to reproduce the bug, including:
 For developers, a bug report should ideally include a pull request with
 failing specs.
 
-### Tackle a Hack Request
+### Help Wanted
 Some issues in particular we'd be happy if contributors like yourself were
 interested in fixing. Browse the issues [labelled `help wanted`][help_wanted]
 and see if there's something there that you could fix.
@@ -62,8 +62,7 @@ you're addressing.
 failing test first, then implement the feature or bug fix to make the test
 pass.
 
-7. **Implement:** Implement your feature or bug fix. Please follow the
-[community-driven Ruby Style Guide][style_guide]*.
+7. **Implement:** Implement your feature or bug fix.
 
 8. **Test to pass:** Run `script/test` to run the test suite in addition to the
 style checkers. If your specs fail and/or style offenses are reported, return
@@ -88,7 +87,7 @@ plugin and set it to [Trim On Save][trim_on_save]._
 [issue_tracker]: https://github.com/Code-for-Miami/miami-budget/issues
 [issue_search]: https://github.com/Code-for-Miami/miami-budget/search?utf8=%E2%9C%93&q=
 [new_issue]: https://github.com/Code-for-Miami/miami-budget/issues/new
-[prerequisites]: https://github.com/codeforamerica/ohana-web-search/blob/master/INSTALL.md#install-prerequisites
+[prerequisites]: https://github.com/Code-for-Miami/miami-budget/blob/master/INSTALL.md
 [fork]: http://help.github.com/fork-a-repo/
 [branch]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository
 [style_guide]: https://github.com/bbatsov/ruby-style-guide
