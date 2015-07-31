@@ -57,10 +57,7 @@ you're addressing.
 5. **Write Specs:** Add specs for your unimplemented feature or bug fix in the
 `/spec/` directory.
 
-6. **Test to fail:** Run `spring rspec`. If your specs pass, return to
-**step 5**. In the spirit of Test-Driven Development, you want to write a
-failing test first, then implement the feature or bug fix to make the test
-pass.
+6. **Test to fail:** 
 
 7. **Implement:** Implement your feature or bug fix.
 
