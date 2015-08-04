@@ -99,11 +99,14 @@ var colors = {
 var totalSize = 0; 
 
 var vis = d3.select("#chart").append("svg:svg")
-    .attr("width", width)
-    .attr("height", height)
+    .attr("width", '100%')//width)
+    .attr("height", '100%')//height)
+    .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
+    .attr('preserveAspectRatio','xMinYMin')
     .append("svg:g")
     .attr("id", "container")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    .attr("transform", "translate(" + Math.min(width,height) / 2 + "," + Math.min(width,height) / 2 + ")");
+//.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 var partition = d3.layout.partition()
     .size([2 * Math.PI, radius * radius])
@@ -118,7 +121,7 @@ var arc = d3.svg.arc()
 // Use d3.text and d3.csv.parseRows so that we do not need to have a header
 // row, and can receive the csv as an array of arrays.
 var d3_data =  encodeURI($('#data').val());
-d3.text( 'http://mauroaperez.com/miamibudget/operating_budget.csv', //'data://'+d3_data,  //"mfp1.csv", // "visit-sequences.csv",
+d3.text( 'operating_budget.csv', //'data://'+d3_data,  //"mfp1.csv", // "visit-sequences.csv",
 function(text) {
   var csv = d3.csv.parseRows(text);
   print_csv = csv;
@@ -131,9 +134,8 @@ function createVisualization(json) {
 
   // Basic setup of page elements.
   initializeBreadcrumbTrail();
-  drawLegend();
-  d3.select("#togglelegend").on("click", toggleLegend);
-  toggleLegend();
+  //drawLegend();
+  //toggleLegend();
 
   // Bounding circle underneath the sunburst, to make it easier to detect
   // when the mouse leaves the parent g.
@@ -191,7 +193,11 @@ function mouseover(d) {
       .text(percentageString);
 
   d3.select("#explanation")
-      .style("visibility", "");
+    .style("visibility", "")
+    .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
+    .attr('preserveAspectRatio','xMinYMin')
+    .attr("id", "explanation")
+    .attr("transform", "translate(" + Math.min(width,height) / 2 + "," + Math.min(width,height) / 2 + ")");
 
   var sequenceArray = getAncestors(d);
   updateBreadcrumbs(sequenceArray, percentageString);
