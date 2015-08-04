@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <meta name="theme-color" content="#2196F3">
     <title>Miami Budget | Visually</title>
@@ -11,10 +12,56 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" >
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" >
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
-  </head>
-  <body>
-    <div id="main">
+</head>
+<body id="top" class="scrollspy">
+
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
+</div>
+
+<!--Navigation-->
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper"><a id="logo-container" href="#top" class="brand-logo">Miami Budget</a>
+            <ul id="nav-mobile" class="right side-nav">
+                <li><a href="#intro">About</a></li>
+                <li><a href="#work">Data</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li> 
+            </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Hero-->
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <h1 class="text_h center header cd-headline letters type">
+            <span>Visually see</span> 
+            <span class="cd-words-wrapper waiting">
+                <b class="is-visible">Miami's</b>
+                <b>Budget</b>
+            </span>
+        </h1>
+    </div>
+</div>
+
+<!--This will show what we are about by Gregory Johnson 07/28-->
+<div id="intro" class="section scrollspy">
+    <div class="container">
+        <div class="row">
+            <div  class="col s12">
+                <h2 class="center header text_h2">See where your cities <span class="span_h2"> budget </span> is being spent <span class="span_h2">visually.</span> </h2>
+            </div>
+        </div>
+    <div id="main" class="row center">
       <div id="chart">
         <div id="explanation" style="visibility: hidden;">
           <span id="value"></span><br/>
@@ -24,13 +71,251 @@
         </div>
       </div>
     </div>
-    <div id="sidebar">
-      <input type="checkbox" id="togglelegend" checked="checked"> Legend<br/>
-      <div id="legend" style="visibility: hidden;"></div>
     </div>
+</div>
 
-    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+<!--This Will Show Different Data Charts by Gregory Johnson 07/28-->
+<div class="section scrollspy" id="work">
+    <div class="container">
+        <h2 class="header text_b">Graphs </h2>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/barchart.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Bar Chart<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="#">See More</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Bar Chart<i class="mdi-navigation-close right"></i></span>
+                        <p><a href='#'>A bar graph showing city spending.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/sunburst.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Sunburst Chart<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="#">See More</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Sunburt Chart <i class="mdi-navigation-close right"></i></span>
+                        <p>A Sunburst showing city spending.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/BubbleChart.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Bubble Graph<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="#">See More</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Bubble Graph <i class="mdi-navigation-close right"></i></span>
+                        <p>A Sunburst showing city spending.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Parallax-->
+<div class="parallax-container">
+    <div class="parallax"><img src="img/miamicity.jpg"></div>
+</div>
+
+<!--Team-->
+<div class="section scrollspy" id="team">
+    <div class="container">
+        <h2 class="header text_b"> Civic Hackers who built Miami Budget </h2>
+        <div class="row">
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="img/avatar1.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Teammate <br/>
+                            <small><em><a class="red-text text-darken-1" href="#">Backend</a></em></small></span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="img/avatar2.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Teammate<br/>
+                            <small><em><a class="red-text text-darken-1" href="#">Data Lead</a></em></small>
+                        </span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="img/avatar3.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">
+                            Mauro <br/>
+                            <small><em><a class="red-text text-darken-1" href="#">Team Lead</a></em></small></span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="img/avatar4.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Gregory<br/>
+                            <small><em><a class="red-text text-darken-1" href="#">FrontEnd</a></em></small></span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="https://www.facebook.com/igregoryjohnson">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://twitter.com/igregoryjohnson">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+GregoryJohnson001">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/igregoryjohnson">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="container">  
+        <div class="row">
+            <div class="col l6 s12">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="mdi-action-account-circle prefix white-text"></i>
+                            <input id="icon_prefix" type="text" class="validate white-text">
+                            <label for="icon_prefix" class="white-text">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="mdi-communication-email prefix white-text"></i>
+                            <input id="icon_email" type="email" class="validate white-text">
+                            <label for="icon_email" class="white-text">Email-id</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="mdi-editor-mode-edit prefix white-text"></i>
+                            <textarea id="icon_prefix2" class="materialize-textarea white-text"></textarea>
+                            <label for="icon_prefix2" class="white-text">Message</label>
+                        </div>
+                        <div class="col offset-s7 s5">
+                            <button class="btn waves-effect waves-light red darken-1" type="submit" name="action">Submit
+                                <i class="mdi-content-send right white-text"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Code For Miami</h5>
+                <ul>
+                    <li><a class="white-text" href="#">Home</a></li>
+                    <li><a class="white-text" href="#">Site</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Let's connect</h5>
+                <ul>
+                    <li>
+                        <a class="white-text" href="#">
+                            <i class="small fa fa-twitter-square white-text"></i> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="#">
+                            <i class="small fa fa-github-square white-text"></i> Github
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="#">
+                            <i class="small fa fa-linkedin-square white-text"></i> Linkedin
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright default_color">
+        <div class="container">
+            Made by <a class="white-text" href="http://codeformiami.org">Code for Miami</a>. Built with <a class="white-text" href="http://materializecss.com/">Materializecss</a>
+        </div>
+    </div>
+</footer>
+
+
+    <!--  Scripts-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
     <script type="text/javascript" src="sequences.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js"></script>
   <script>
@@ -43,5 +328,6 @@
   ga('send', 'pageview');
 
 </script>
-  </body>
+
+    </body>
 </html>
