@@ -18,9 +18,8 @@ The project is public and still under development. The goal is to get interested
 #### Press
 * [The New Tropic](http://thenewtropic.com/visualize-miami-dade-budget/)
 
-## [Team](http://miamigraph.com/#team)
+### [Team](http://miamigraph.com/#team)
 
-## How
 #### Dependencies
 Programming Languages: HTML, CSS, JavaScript (jQuery)
 Frameworks and Libraries: [D3.js](http://d3js.org), [Materialize](http://materializecss.com) 
