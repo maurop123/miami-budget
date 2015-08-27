@@ -31,6 +31,7 @@
 .text_h {
     padding: 15% 0;
     font-size: 6.0em;
+    line-height: 1.25em;
     font-weight: 100;
     color:white;
 }
@@ -235,8 +236,8 @@ nav a.button-collapse {
 }
 
 .card-avatar img {
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
     border-radius: 75px;
 }
 

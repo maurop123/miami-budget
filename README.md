@@ -1,7 +1,7 @@
 # Miami-Budget
 
 ## What
-Currently: A D3.js sunburst graphic of Miami's 2016 budget proposal.  I say currently because the definition of this project expands as the opportunity to make this information available to the public expands with each meeting. The main purpose is to inform everyone in Miami Dade about the budget for 2016.
+Currently: A D3.js sunburst graphic of Miami Dade county's 2016 budget proposal. I say currently because the definition of this project expands as the opportunity to make this information available to the public expands with each meeting. The main purpose is to inform everyone in Miami Dade about the budget for 2016.
 
 The graphic was adapted from here: http://bl.ocks.org/kerryrodden/7090426
 The data was published here: http://miamidade.budget.finance.socrata.com/#!/view-data
