@@ -255,8 +255,7 @@ function initializeBreadcrumbTrail() {
     .attr("height", 150)
     //.attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
     //.attr('preserveAspectRatio','xMinYMin')
-    .attr("id", "trail")
-    .attr("transform", "translate(" + Math.min(width,height) / 2 + "," + Math.min(width,height) / 2 + ")");
+    .attr("id", "trail");
   // Add the label at the end, for the percentage.
   trail.append("svg:text")
     .attr("id", "endlabel")
