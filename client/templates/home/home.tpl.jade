@@ -3,11 +3,14 @@
     .container
       .nav-wrapper
         a.flow-text.brand-logo(id="logo-container" href="#{pathFor 'home' }") Miami Graph
-      ul.right.hide-on-med-and-down
+      
+      // Menu hidden till nav pages are created
+
+      //ul.right.hide-on-med-and-down
         li
           a(href="#{pathFor 'about'}") About
   
-      ul#nav-mobile.side-nav
+      //ul#nav-mobile.side-nav
         li
           a(href="#{pathFor 'about'}") About
   
@@ -15,18 +18,12 @@
         i.mdi-navigation-menu
 
 // Hero
-.section.no-pad-bot#index-banner
-  .container
-    h1.text_h.center.header.cd-headline.letters.type
-      span Experience Miami Dade's Data
-
 .section.scrollspy#visual
   .container
     .row
       .col.s12
-        h2.center.header.text_h2 We at
-         a(href="http://codeformiami.org/") Code for Miami
-         | have visualized Miami Dade's 2016
+        h2.center.header.text_h2
+         | See Miami Dade's 2016
          a(href="https://transparencyapps.demo.socrata.com/dataset/Miami-Dade-FY-16-Proposed-Operating-Budget/un64-wacr?") budget proposal.
       #main.col.s12
         #chart
@@ -37,10 +34,10 @@
             br
             of total budget
             #sequence
-      .col.s12
-        h2.center.header.text_h2 Pretty cool, huh?
 
 // TEAM
+// Most of this is going to be redone on the about page. design pending
+
  .section.scrollspy#team
   .container
     h2.header.center.text_b Project Contributors
@@ -111,6 +108,8 @@ footer#engage.page-footer.default_color.scrollspy
         .section.col.s12
           p.flow-text
             | Join us every Monday at 7pm at 
+            a.white-text(style="text-decoration:underline" href="http://codeformiami.org/") Code for Miami
+            | at
             a.white-text(style="text-decoration:underline" href="http://thelabmiami.com/") The Lab Miami
       .col.s4.m2.offset-m3
                     .a.white-text(href="https://www.facebook.com/CodeForMiami?fref=ts")
