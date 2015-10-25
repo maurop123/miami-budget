@@ -1,0 +1,12 @@
+#masonry-grid.row
+  each services
+    .col.s12.m6.l4
+      .card
+        .card-image
+          a.modal-trigger.waves-effect.waves-light(href="##{this.shortName}")
+            img(src="#{this.mainImg}")
+        .card-content.center
+          //
+           a.modal-trigger(href="##{this.shortName}")
+          a.modal-trigger(href="/portfolio/#{this.shortName}")
+            span.card-title #{this.name}

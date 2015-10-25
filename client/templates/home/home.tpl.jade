@@ -1,0 +1,112 @@
+.navbar-fixed
+  nav#nav_f.default_color(role="navigation")
+    .container
+      .nav-wrapper
+        a.flow-text.brand-logo(id="logo-container" href="#{pathFor 'home' }") Miami Graph
+      ul.right.hide-on-med-and-down
+        li
+          a(href="#{pathFor 'about'}") About
+  
+      ul#nav-mobile.side-nav
+        li
+          a(href="#{pathFor 'about'}") About
+  
+      a.button-collapse.grey-text(href="#" data-activates="nav-mobile")
+        i.mdi-navigation-menu
+
+// Top Section
+#first-section.parallax-container.valign-wrapper
+
+  .row.center.valign
+    h3.header.col.s12.light.white-text Where does technology fit in your buisness?
+
+  .parallax
+    img.responsive-img(src="background1.jpg" alt="background1")
+
+// Services
+.section
+  .container
+
+    .section
+      p.flow-text.center.
+        We are a boutique dev shop that works to understand your business and find ways where technology can help you.
+    br
+    br
+
+//
+    #masonry-grid.row
+      each services
+        .col.s12.m6.l4
+          .card
+            .card-image
+              a.modal-trigger.waves-effect.waves-light(href="##{this.shortName}")
+                img(src="#{this.mainImg}")
+            .card-content.center
+              a.modal-trigger(href="##{this.shortName}")
+                span.card-title #{this.name}
+
+
+// Call to Action
+.parallax-container
+  .parallax
+    img.responsive-img(src="background2.jpg" alt="background2")
+
+
+ .section.container.minheight.valign-wrapper
+  .row.center.valign
+    .col.s12
+      p.flow-text.
+        Send us a message to learn more.
+      a.modal-trigger.waves-effect.wave-light.btn-large(href="#contact") Connect
+
+
+// Modals
+each services
+  div(id="#{this.shortName}" class="services modal")
+    .modal-content
+      .row
+        .slider
+          ul.slides
+            each this.imgs
+              li
+                img.responsive-img(src="#{img}" alt="#{alt}")
+      #copy.row.center
+        each this.copy
+          p.
+            #{this}
+
+#contact.modal
+  .modal-content
+    .row
+      .col.s12
+        form#clientForm.col.s12
+          .row
+            .input-field.col.s6
+              input#name(name="name" type="text")
+              label(for="name") Name
+            .input-field.col.s6
+              input#email(name="email" type="email")
+              label(for="email") Email
+          .row
+            .input-field.col.s12
+              input#subject(name="subject" type="text")
+              label(for="subject") Subject
+          textarea#message.materialize-textarea(name="message" placeholder="How can we help?")
+          button.btn.waves-effect.waves-light(type="submit") Send
+    
+
+footer.page-footer
+  .container
+    .row(style="margin-bottom:0")
+      .col.l6.s12
+        h5.white-text Find us online
+
+      nav
+       .col.l3.s12.offset-l3.nav-wrapper
+        ul
+          li
+            a.white-text(href="http://twitter.com/mptysquare")
+              i.fa.fa-twitter.fa-2x
+          li
+            a.white-text(href="http://github.com/mptysquare")
+              i.fa.fa-github.fa-2x
