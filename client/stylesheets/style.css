@@ -1,3 +1,11 @@
+.hidden{
+  display: none;
+}
+
+#nvd3-chart {
+  height: 400px;
+}
+
 /* Custom Stylesheet */
 /**
  *
