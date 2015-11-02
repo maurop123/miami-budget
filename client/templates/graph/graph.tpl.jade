@@ -1,0 +1,45 @@
+.navbar-fixed
+  nav#nav_f.default_color(role="navigation")
+    .container
+      .nav-wrapper
+        a.flow-text.brand-logo(id="logo-container" href="#{pathFor 'home' }") Miami Graph
+      
+      // Menu hidden till nav pages are created
+
+      //ul.right.hide-on-med-and-down
+        li
+          a(href="#{pathFor 'about'}") About
+  
+      //ul#nav-mobile.side-nav
+        li
+          a(href="#{pathFor 'about'}") About
+  
+      a.button-collapse.grey-text(href="#" data-activates="nav-mobile")
+        i.mdi-navigation-menu
+
+.section
+  .container
+    .row
+      +pieChart
+
+
+footer#engage.page-footer.default_color.scrollspy
+  .container.section
+    .row.center
+      .col.s12.white-text
+        h2.white-text Let's connect
+        .section.col.s12
+          p.flow-text
+            | Join us every Monday at 7pm at 
+            a.white-text(style="text-decoration:underline" href="http://codeformiami.org/") Code for Miami
+            | at
+            a.white-text(style="text-decoration:underline" href="http://thelabmiami.com/") The Lab Miami
+      .col.s4.m2.offset-m3
+                    .a.white-text(href="https://www.facebook.com/CodeForMiami?fref=ts")
+                      i.large.fa.fa-facebook-square.white-text
+      .col.s4.m2
+                    a.white-text(href="https://twitter.com/CodeForMiami")
+                      i.large.fa.fa-twitter-square.white-text
+      .col.s4.m2
+                    a.white-text(href="https://github.com/Code-for-Miami/miami-budget")
+                      i.large.fa.fa-github-square.white-text
