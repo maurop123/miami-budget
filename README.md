@@ -26,11 +26,14 @@ Miami Graph started as a single D3.js sunburst visualization of Miami Dade count
 ### Contribute
 * [Trello Task List](https://trello.com/b/fIe4tQWP/miami-graph)
 * We meet us at Code for Miami every Monday @7pm @TheLabMiami
+
 #### Coding
 * Fork this repo and clone it on your computer
 * Checkout a branch for your work
 * Submit a pull request to add your changes
+
 #### Writing
 Refer to Trello
+
 #### Research
 Refer to Trello
