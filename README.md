@@ -17,7 +17,7 @@ Miami Graph started as a single D3.js sunburst visualization of Miami Dade count
 1. [Install Meteor](https://www.meteor.com/install)
 2. `git clone https://github.com/Code-for-Miami/miamigraph.git`
 3. From the cloned repo, run `meteor`
-4. After the app builds, visit [http://localhost:3000](http://localhost:3000)
+4. After the app builds, please visit [http://localhost:3000](http://localhost:3000)
 
 ###Gotcha!
 * `Scss compiler error: file to import not found or unreadable: .meteor/.../sass/materialize.scss`
