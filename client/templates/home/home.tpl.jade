@@ -1,122 +1,18 @@
-.navbar-fixed
-  nav#nav_f.default_color(role="navigation")
+.section.container
+  // Hero
+  .section.scrollspy#visual
     .container
-      .nav-wrapper
-        a.flow-text.brand-logo(id="logo-container" href="#{pathFor 'home' }") Miami Graph
-      
-      // Menu hidden till nav pages are created
-
-      //ul.right.hide-on-med-and-down
-        li
-          a(href="#{pathFor 'about'}") About
-  
-      //ul#nav-mobile.side-nav
-        li
-          a(href="#{pathFor 'about'}") About
-  
-      a.button-collapse.grey-text(href="#" data-activates="nav-mobile")
-        i.mdi-navigation-menu
-
-// Hero
-.section.scrollspy#visual
-  .container
-    .row
-      .col.s12
-        h2.center.header.text_h2
-         | See Miami Dade's 2016
-         a(href="https://transparencyapps.demo.socrata.com/dataset/Miami-Dade-FY-16-Proposed-Operating-Budget/un64-wacr?") budget proposal.
-      #main.col.s12
-        #chart
-          #explanation(style="visibility: hidden;")
-            span#value
-            br
-            span#percentage
-            br
-            of total budget
-            #sequence
-
-// TEAM
-// Most of this is going to be redone on the about page. design pending
-
- .section.scrollspy#team
-  .container
-    h2.header.center.text_b Project Contributors
-    .row
-      .col.s12.m4
-        .card.card-avatar
-          .waves-effect.waves-block.waves-light
-            img.activator(src="img/mauro.jpg")
-          .card-content
-            span.card-title.activator.grey-text.text-darken-4 Mauro Perez
+      .row
+        .col.s12
+          h2.center.header.text_h2
+           | See Miami Dade's 2016
+           a(href="https://transparencyapps.demo.socrata.com/dataset/Miami-Dade-FY-16-Proposed-Operating-Budget/un64-wacr?") budget proposal.
+        #main.col.s12
+          #chart
+            #explanation(style="visibility: hidden;")
+              span#value
               br
-              small 
-                em
-                  a.red-text.text-darken-1(href="http://leadmiami.co") LEAD Miami
-            p
-              a.blue-text.text-lighten-2(href="https://www.facebook.com/LEADmiami")
-                i.fa.fa-facebook-square
-              a.blue-text.text-lighten-2(href="https://twitter.com/mptysquare")
-                i.fa.fa-twitter-square
-              a.blue-text.text-lighten-2(href="https://github.com/maurop123")
-                i.fa.fa-github-square
-              a.blue-text.text-lighten-2(href="https://www.linkedin.com/pub/mauro-perez/11/341/256")
-                i.fa.fa-linkedin-square
-      .col.s12.m4
-        .card.card-avatar
-          .waves-effect.waves-block.waves-light
-            img.activator(src="img/mauro.jpg")
-          .card-content
-            span.card-title.activator.grey-text.text-darken-4 Mauro Perez
+              span#percentage
               br
-              small 
-                em
-                  a.red-text.text-darken-1(href="http://leadmiami.co") LEAD Miami
-            p
-              a.blue-text.text-lighten-2(href="https://www.facebook.com/LEADmiami")
-                i.fa.fa-facebook-square
-              a.blue-text.text-lighten-2(href="https://twitter.com/mptysquare")
-                i.fa.fa-twitter-square
-              a.blue-text.text-lighten-2(href="https://github.com/maurop123")
-                i.fa.fa-github-square
-              a.blue-text.text-lighten-2(href="https://www.linkedin.com/pub/mauro-perez/11/341/256")
-                i.fa.fa-linkedin-square
-      .col.s12.m4
-        .card.card-avatar
-          .waves-effect.waves-block.waves-light
-            img.activator(src="img/mauro.jpg")
-          .card-content
-            span.card-title.activator.grey-text.text-darken-4 Mauro Perez
-              br
-              small 
-                em
-                  a.red-text.text-darken-1(href="http://leadmiami.co") LEAD Miami
-            p
-              a.blue-text.text-lighten-2(href="https://www.facebook.com/LEADmiami")
-                i.fa.fa-facebook-square
-              a.blue-text.text-lighten-2(href="https://twitter.com/mptysquare")
-                i.fa.fa-twitter-square
-              a.blue-text.text-lighten-2(href="https://github.com/maurop123")
-                i.fa.fa-github-square
-              a.blue-text.text-lighten-2(href="https://www.linkedin.com/pub/mauro-perez/11/341/256")
-                i.fa.fa-linkedin-square
-
-footer#engage.page-footer.default_color.scrollspy
-  .container.section
-    .row.center
-      .col.s12.white-text
-        h2.white-text Let's connect
-        .section.col.s12
-          p.flow-text
-            | Join us every Monday at 7pm at 
-            a.white-text(style="text-decoration:underline" href="http://codeformiami.org/") Code for Miami
-            | at
-            a.white-text(style="text-decoration:underline" href="http://thelabmiami.com/") The Lab Miami
-      .col.s4.m2.offset-m3
-                    .a.white-text(href="https://www.facebook.com/CodeForMiami?fref=ts")
-                      i.large.fa.fa-facebook-square.white-text
-      .col.s4.m2
-                    a.white-text(href="https://twitter.com/CodeForMiami")
-                      i.large.fa.fa-twitter-square.white-text
-      .col.s4.m2
-                    a.white-text(href="https://github.com/Code-for-Miami/miami-budget")
-                      i.large.fa.fa-github-square.white-text
+              of total budget
+              #sequence

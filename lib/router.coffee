@@ -1,4 +1,5 @@
 Router.configure(
+  layoutTemplate: 'appBody'
   waitOn: ()->
     return [
       Meteor.subscribe('builtBudgets')
@@ -14,4 +15,4 @@ Router.route('budget-builder', ()->
   this.render('form')
 )
 Router.route('pie')
-#Router.route('form')
+Router.route('three-eleven')
