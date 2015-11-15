@@ -9,7 +9,6 @@ autopublish
 insecure
 fourseven:scss
 jquery
-iron:router
 coffeescript
 poetic:materialize-scss
 mquandalle:jade
@@ -17,3 +16,4 @@ fortawesome:fontawesome
 cunneen:mailgun
 meteorhacks:kadira
 d3js:d3
+iron:router
