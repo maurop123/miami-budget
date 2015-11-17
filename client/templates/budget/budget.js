@@ -1,4 +1,4 @@
-Template.home.onRendered( function() {
+Template.budget.onRendered( function() {
 
 // Dimensions of sunburst.
 var width = 750;
