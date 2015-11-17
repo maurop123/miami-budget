@@ -1,18 +1,14 @@
-.section.container
-  // Hero
-  .section.scrollspy#visual
-    .container
-      .row
-        .col.s12
-          h2.center.header.text_h2
-           | See Miami Dade's 2016
-           a(href="https://transparencyapps.demo.socrata.com/dataset/Miami-Dade-FY-16-Proposed-Operating-Budget/un64-wacr?") budget proposal.
-        #main.col.s12
-          #chart
-            #explanation(style="visibility: hidden;")
-              span#value
-              br
-              span#percentage
-              br
-              of total budget
-              #sequence
+.row.center.tight
+  .col.s12
+    span.caption
+      a(href="{{pathFor 'three-eleven' }}") 311 Calls
+    iframe(width="100%" height="520" frameborder="0" src="https://miamigraph.cartodb.com/viz/c761ed3e-8bb0-11e5-a9cf-0ecfd53eb7d3/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen)
+
+  .col.s12.parallax-container.valign-wrapper
+    .row.center.valign
+      h1.text_h2 We visualize city data
+
+  .col.s12
+    span.caption
+      a(href="{{pathFor 'budget' }}") 2016 Budget
+    iframe(width="100%" height="350" frameborder="0" src="{{pathFor 'sunburst' }}" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen)
