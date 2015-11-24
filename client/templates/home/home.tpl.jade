@@ -1,12 +1,14 @@
-.row.center
+.row.center.tight
   .col.s12
+    span.caption
+      a(href="{{pathFor 'three-eleven' }}") 311 Calls
     iframe(width="100%" height="520" frameborder="0" src="https://miamigraph.cartodb.com/viz/c761ed3e-8bb0-11e5-a9cf-0ecfd53eb7d3/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen)
-    a.caption.waves-effect(href="{{pathFor 'three-eleven'}}" style="width:100%" )
 
   .col.s12.parallax-container.valign-wrapper
     .row.center.valign
-      h1 We visualize city data
+      h1.text_h2 We visualize city data
 
   .col.s12
-    iframe(width="100%" height="780" frameborder="0" src="{{pathFor 'sunburst' }}" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen)
-    a.waves-effect(href="{{pathFor 'budget'}}")
+    span.caption
+      a(href="{{pathFor 'budget' }}") 2016 Budget
+    iframe(width="100%" height="350" frameborder="0" src="{{pathFor 'sunburst' }}" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen)

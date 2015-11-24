@@ -1,42 +1,39 @@
-# Miami-Budget
+# Miami Graph
 
-## Why
-Code for Miami has been working with the local government towards transparency and to release more of its data. This project's mission is to deliver this data 
+![Budget Sunburst](http://leadmiami.co/content/images/2015/08/sunburst.png)
 
-## What
-Currently: A D3.js sunburst graphic of Miami Dade county's 2016 budget proposal. I say currently because the definition of this project expands as the opportunity to make this information available to the public expands with each meeting. The main purpose is to make accessible the data that the government of Miami Dade county has opened up.
+### Experience Miami's Data
+Miami Graph started as a single D3.js sunburst visualization of Miami Dade county's 2016 budget proposal data. It aims to make Miami's data more engaging for its citizens.
 
-The graphic was adapted from here: http://bl.ocks.org/kerryrodden/7090426
-The data was published here: http://miamidade.budget.finance.socrata.com/#!/view-data
+[miamigraph.com](http://miamigraph.com)
 
-#### Status
-The project is public and still under development. The goal is to get interested people more involved. [CHANGELOG](https://github.com/CHANGELOG.md).
+**Table of Contents**
 
-#### Screenshots
-![Budget Sunburst](http://actions.leadmiami.co/content/images/2015/08/sunburst.png)
+- [Installation](#installation)
+- [Contribute](#contribute)
 
-#### Press
-* [The New Tropic](http://thenewtropic.com/visualize-miami-dade-budget/)
+### Installation
 
-### [Team](http://miamigraph.com/#team)
+1. [Install Meteor](https://www.meteor.com/install)
+2. `git clone https://github.com/Code-for-Miami/miamigraph.git`
+3. From the cloned repo, run `meteor`
+4. After the app builds, please visit [http://localhost:3000](http://localhost:3000)
 
-#### Dependencies
-Programming Languages: HTML, CSS, JavaScript (jQuery)
-Frameworks and Libraries: [D3.js](http://d3js.org), [Materialize](http://materializecss.com) 
-Version: latest
+###Gotcha!
+* `Scss compiler error: file to import not found or unreadable: .meteor/.../sass/materialize.scss`
+ * Ignore this error. Ctrl+C and rerun the app with `meteor`
 
-#### Install
-Is a static website.
+### Contribute
+* [Trello Task List](https://trello.com/b/fIe4tQWP/miami-graph)
+* We meet us at Code for Miami every Monday @7pm @TheLabMiami
 
-#### Deploy
-Deploying to AWS
+#### Coding
+* Fork this repo and clone it on your computer
+* Checkout a branch for your work
+* Submit a pull request to add your changes
 
-#### Testing
-Not Implemented yet
+#### Writing
+Refer to Trello
 
-## Contribute
-Simply send pull request to the repository or you can meet us at Code for Miami every Monday @7pm @TheLabMiami It will be reviewed and then merged. For detailed information, please refer to
-[CONTRIBUTING.md file](https://github.com/CONTRIBUTING.md).
-
-## License
-A link to the Code for America copyright and [LICENSE.md file](https://github.com/codeforamerica/ceviche-cms/blob/master/LICENCE.md).
+#### Research
+Refer to Trello
