@@ -1,0 +1,22 @@
+.parallax-container {
+  min-height: 500px;
+}
+
+.row.tight .col {
+  padding: 0;
+}
+
+.caption {
+  position: absolute;
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 300;
+  background-color: rgba(0,0,0,0.3);
+  text-align: left;
+  padding-left: 10px;
+}
+
+.caption a {
+  color: white;
+  text-decoration: underline;
+}
