@@ -1,4 +1,4 @@
-# Miami Graph
+# Miami GRAPH
 
 ![Budget Sunburst](http://leadmiami.co/content/images/2015/08/sunburst.png)
 
