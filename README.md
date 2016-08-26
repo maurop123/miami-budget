@@ -1,3 +1,3 @@
 # miami-budget
 
-this project is out of date
+Checkout the visual here: http://maurop123.github.io/miami-budget/
